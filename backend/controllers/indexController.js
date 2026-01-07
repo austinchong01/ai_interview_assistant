@@ -1,6 +1,13 @@
 
-async function test(req, res) {
+async function form(req, res) {
   try {
+    const { company, job, linkedin } = req.body;
+
+    // send company website to AI
+    // send job posting to AI
+
+    if (linkedin) //send linkedin to AI
+    
     res.json({test: "test success"});
   } catch (error) {
     console.error('Error fetching people:', error);
@@ -9,5 +16,5 @@ async function test(req, res) {
 }
 
 module.exports = {
-  test,
+  form,
 };
