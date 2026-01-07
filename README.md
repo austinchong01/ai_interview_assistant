@@ -41,3 +41,9 @@ Nice-to-Have Functionalities
 2. PDF Export
 3. Recruiter Look-up
 4. Database
+
+
+API Endpoints
+1. POST /form
+2. GET /api/ai
+3. GET /document
