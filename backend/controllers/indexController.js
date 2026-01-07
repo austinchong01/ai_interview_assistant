@@ -1,3 +1,4 @@
+import { prompt } from "../services/ai.js";
 
 async function form(req, res) {
   try {
@@ -6,7 +7,9 @@ async function form(req, res) {
     // send company website to AI
     // send job posting to AI
 
-    if (linkedin) //send linkedin to AI
+    // if (linkedin) //send linkedin to AI
+
+    prompt(company, job, linkedin);
     
     res.json({test: "test success"});
   } catch (error) {
@@ -15,6 +18,4 @@ async function form(req, res) {
   }
 }
 
-module.exports = {
-  form,
-};
+export { form };

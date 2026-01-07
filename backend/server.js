@@ -1,9 +1,10 @@
 // app.js
-require("dotenv").config();
-const cors = require('cors');
-const express = require("express");
+import "dotenv/config";
+import cors from "cors";
+import express from "express";
+import indexRouter from "./routes/indexRouter.js";
+
 const app = express();
-const indexRouter = require("./routes/indexRouter");
 
 app.use(
   cors({
@@ -12,9 +13,8 @@ app.use(
   })
 );
 
-app.use(express.urlencoded({ extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
 
 // Health check endpoint
 app.get("/health", (req, res) => {
@@ -25,9 +25,7 @@ app.get("/health", (req, res) => {
   });
 });
 
-
 app.use("/", indexRouter);
-
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Express app listening on port ${PORT}!`));
