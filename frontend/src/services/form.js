@@ -1,14 +1,11 @@
 const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const form = {
-  async submit({company, job, linkedin}) {
+  async submit(formData) {
     try {
       const response = await fetch(`${API_BASE_URL}/form`, {
         method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({company, job, linkedin})
+        body: formData,
       });
       const data = await response.json();
 

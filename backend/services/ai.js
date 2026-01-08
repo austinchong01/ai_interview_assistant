@@ -17,16 +17,14 @@ async function prompt(job, resumePath) {
       `Given this job description, provide me the company name, company description, 
     company industry, company size, company stage, job name, job description, job qualifications, 
     job experience level, job salary, team of the role, and location.
+    
+    Now, given the attached resume, include fields of "how to be of impact" and "what the company currently needs", give these
+    two fields a label of "impact" and "company_need". Now include 3 potential technical questions for the interview and 3
+    questions to ask the interviewer, include answers based off my resume and job description. Give me 3 points to higlight
+    off of my resume that align with the job description. Finally, include a link from Reddit, Glassdoor, and Blind about interview experiences from this company.
 
     Please output a JSON object, each key-value pair corresponding to the desired fields 
     I specified: ${job}
-    
-    Now, given the attached resume, include fields of "how to be of impact" and "what the company currently needs", give these
-    two fields a label of "impact" and "company_need". Now include 3 potential technical questions from the interview and 3
-    questions to ask the interviewer, include answers based off the resume and job description. Finally, include a link from Reddit, 
-    Glassdoor, and Blind about interview experiences from this company.
-
-    Please output a separate JSON object, each key-value pair corresponding to the desired fields I specified.
     `,
     ]),
   });
