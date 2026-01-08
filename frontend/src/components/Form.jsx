@@ -13,14 +13,9 @@ function Form() {
   return (
     <div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-2 items-center mt-100">
-        <label htmlFor="company">Company URL:</label>
-        <input type="text" id="company" name="company" required className="border w-50"/>
 
-        <label htmlFor="job">Job Posting URL:</label>
-        <input type="text" id="job" name="job" required className="border w-50"/>
-
-        <label htmlFor="linkedin">LinkedIn: (optional)</label>
-        <input type="text" id="linkedin" name="linkedin" className="border w-50"/>
+        <label htmlFor="job">Job Posting Description:</label>
+        <input type="text" id="job" name="job" required className="border w-100 h-100"/>
 
         <button type="submit" className="border w-20">Submit</button>
       </form>

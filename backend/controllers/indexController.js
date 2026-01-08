@@ -2,20 +2,15 @@ import { prompt } from "../services/ai.js";
 
 async function form(req, res) {
   try {
-    const { company, job, linkedin } = req.body;
+    const { job } = req.body;
 
-    // send company website to AI
-    // send job posting to AI
-
-    // if (linkedin) //send linkedin to AI
-
-    prompt(company, job, linkedin);
+    const result = prompt(job);
     
-    res.json({test: "test success"});
+    res.json({result});
   } catch (error) {
     console.error('Error fetching people:', error);
     res.status(500).send('Error fetching test');
   }
 }
 
-export { form };
+export default { form };
