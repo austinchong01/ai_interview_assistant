@@ -4,6 +4,6 @@
 
 ## add ".env" file:
 PORT=3000
-FRONTEND_URL=https://localhost:5173
+FRONTEND_URL=http://localhost:5173
 NODE_ENV=production
 

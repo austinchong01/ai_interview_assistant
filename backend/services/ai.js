@@ -20,26 +20,27 @@ async function prompt(job, resumePath) {
       createPartFromUri(myfile.uri, myfile.mimeType),
       `Given this job description, ${job}, and my resume, please output a JSON object of the following fields:
 
-       company name, 
-       company description, 
-       company industry, 
-       company size, 
-       company stage, 
+       company_name, 
+       company_description in 3 bullet points, 
+       company_industry, 
+       company_size, 
+       company_stage, 
 
-       job name, 
-       job description, 
-       job qualifications, 
-       job experience level, 
-       job salary, 
-       job team,
-       job location,
+       job_name, 
+       job_description in 3 bullet points, 
+       job_qualifications as an array with elements "required" and "preferred", 
+       job_experience_level, 
+       job_salary, 
+       job_team,
+       job_location,
 
-       how to be of impact as "impact", 
-       what the company currently needs as "company_need", 
+       how to be of impact in 3 bullet points and label this as "impact", 
+       what the company currently needs in 3 bullet points and label this as "company_need", 
        3 potential technical interview questions as "technical_interview_questions",
        3 questions to ask the interviewer as "interviewer_questions",
-       3 stories to highlight off my resume as "higlight",
-       analysis of how my skills align with the role and company as "analysis"
+       an array of 3 objects to highlight stories off of my resume that align with the job; 
+       each with properties "title" and "description"; this entire object would be
+       labeled as "stories",
       `,
     ]),
   });
