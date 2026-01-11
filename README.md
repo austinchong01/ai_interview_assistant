@@ -1,8 +1,7 @@
 AI Interview Assisstant
 ========
 
-A full-stack file management application that replicates Google Drive's core functionality, 
-allowing users to upload, organize, and manage files and folders with secure authentication.
+A full-stack application that scrapes job postings and user resumes, then leverages AI to extract structured insights on company culture, role requirements, technical expectations, and personalized guidance
 
 Demo
 --------
