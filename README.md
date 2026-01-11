@@ -7,8 +7,7 @@ Demo
 --------
 ### Live Demo: 
 
-https://github.com/user-attachments/assets/3cbe6aab-ed81-4739-b782-3e45a2d98c73
-
+https://github.com/user-attachments/assets/6afd015b-7d1e-472f-8b33-3e6e2e2d86a3
 
 
 
