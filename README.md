@@ -1,7 +1,7 @@
 AI Interview Assisstant
 ========
 
-A full-stack application that scrapes job postings and user resumes, then leverages AI to extract structured insights on company culture, role requirements, technical expectations, and personalized guidance
+A full-stack application that utilizes AI to scrape job postings and user resumes, then extracts structured insights on company culture, role requirements, technical expectations, and personalized guidance
 
 Demo
 --------
@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/6afd015b-7d1e-472f-8b33-3e6e2e2d86a3
 Purpose
 --------
 
-This project demonstrates full-stack development skills including for an AI Engineer role, utilizing AI for developing innovative applications.
+This project demonstrates full-stack development capabilities utilizing AI for developing innovative applications.
 
 ***Built to showcase proficiency in modern web development practices and the PERN (PostgreSQL, Express.js, React.js, Node.js) stack.***
 
